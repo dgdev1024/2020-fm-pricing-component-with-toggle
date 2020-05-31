@@ -1,0 +1,62 @@
+@import '../../global.scss';
+
+header {
+  padding: 48px 0px;
+
+  h1 {
+    font-size: 1.8em;
+    color: $color-grayish-blue;
+    text-align: center;
+  }
+
+  .fm-pricing-toggle {
+    padding: 32px 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      display: flex;
+      color: $color-light-grayish-blue;
+    }
+
+    button {
+      width: 64px;
+      height: 32px;
+      margin: 0px 16px;
+      background-color: $color-gradient-end;
+      border: none;
+      border-radius: 32px;
+      transition: $time-transition;
+
+      .fm-button-notch {
+        display: block;
+        position: relative;
+        width: 24px;
+        height: 24px;
+        top: 0px;
+        left: 36px;
+        background-color: $color-very-light-grayish-blue;
+        border-radius: 32px;
+        transition: $time-transition;
+      }
+
+      &:hover {
+        background-color: $color-gradient-start;
+        cursor: pointer;
+
+        .fm-button-notch {
+          background-color: white;
+        }
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &.on .fm-button-notch {
+        left: 4px;
+      }
+    }
+  }
+}

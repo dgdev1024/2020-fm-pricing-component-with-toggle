@@ -4,4 +4,18 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: $font-family-normal;
+  font-size: $font-size-normal;
+  font-weight: $font-weight-normal;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: $color-very-light-grayish-blue;
+  background-image:
+    url('./img/bg-top.svg'),
+    url('./img/bg-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
+  background-size: 30%;
 }

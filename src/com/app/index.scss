@@ -1,0 +1,22 @@
+@import '../../global.scss';
+
+main {
+  width: 90%;
+  margin: 0px auto;
+  padding: 24px 0px 48px;
+
+  @media #{$screen-large} {
+    width: 80%;
+  }
+
+  .fm-pricing-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    @media #{$screen-medium} {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0px;
+    }
+  }
+}

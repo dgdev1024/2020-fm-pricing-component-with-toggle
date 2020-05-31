@@ -1,0 +1,91 @@
+@import '../../global.scss';
+
+.fm-pricing-card {
+  padding: 24px;
+  background-color: white;
+  color: $color-grayish-blue;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+
+  @media #{$screen-medium} {
+    margin: 24px 0px;
+
+    &:first-child {
+      border-radius: 8px 0px 0px 8px;
+    }
+
+    &:last-child {
+      border-radius: 0px 8px 8px 0px;
+    }
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p {
+    padding: 24px 0px;
+    font-size: 3.5em;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      padding: 16px 0px;
+      border-top: 1px solid $color-light-grayish-blue;
+
+      &:last-child {
+        margin-bottom: 24px;
+        border-bottom: 1px solid $color-light-grayish-blue;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    padding: 12px;
+    background-image: linear-gradient(
+      to right,
+      $color-gradient-start,
+      $color-gradient-end
+    );
+    color: $color-very-light-grayish-blue;
+    font-size: 0.8em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: $time-transition;
+
+    &:hover {
+      background-image: none;
+      border-color: $color-gradient-end;
+      color: $color-gradient-end;
+    }
+  }
+
+  &.popular {
+    margin: 0px;
+    background-color: $color-gradient-end;
+    color: $color-very-light-grayish-blue;
+    
+    @media #{$screen-medium} {
+      padding: 48px 24px;
+    }
+
+    a {
+      background-image: none;
+      background-color: $color-very-light-grayish-blue;
+      color: $color-gradient-end;
+
+      &:hover {
+        border-color: $color-very-light-grayish-blue;
+        background-color: $color-gradient-end;
+        color: $color-very-light-grayish-blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+// Global Variables
+$color-gradient-start: hsl(236, 72%, 79%);
+$color-gradient-end: hsl(237, 63%, 64%);
+$color-very-light-grayish-blue: hsl(240, 78%, 98%);
+$color-light-grayish-blue: hsl(234, 14%, 74%);
+$color-grayish-blue: hsl(233, 13%, 49%);
+$color-dark-grayish-blue: hsl(232, 13%, 33%);
+
+$font-family-normal: 'Montserrat', sans-serif;
+$font-size-normal: 15px;
+$font-weight-normal: 700;
+
+$screen-small: '(min-width: 600px)';
+$screen-medium: '(min-width: 800px)';
+$screen-large: '(min-width: 1000px)';
+
+$time-transition: 0.2s;
