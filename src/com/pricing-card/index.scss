@@ -26,7 +26,8 @@
 
   p {
     padding: 24px 0px;
-    font-size: 3.5em;
+    font-size: 4em;
+    color: $color-dark-grayish-blue;
   }
 
   ul {
@@ -69,11 +70,19 @@
 
   &.popular {
     margin: 0px;
-    background-color: $color-gradient-end;
+    background-image: linear-gradient(
+      to bottom right,
+      $color-gradient-start,
+      $color-gradient-end 
+    );
     color: $color-very-light-grayish-blue;
     
     @media #{$screen-medium} {
       padding: 48px 24px;
+    }
+
+    p {
+      color: white;
     }
 
     a {
@@ -83,7 +92,7 @@
 
       &:hover {
         border-color: $color-very-light-grayish-blue;
-        background-color: $color-gradient-end;
+        background-color: transparent;
         color: $color-very-light-grayish-blue;
       }
     }
