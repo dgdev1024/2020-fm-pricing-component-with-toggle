@@ -1,0 +1,39 @@
+{
+  "name": "2020-fm-pricing-component-with-toggle",
+  "version": "1.0.0",
+  "description": "My implementation of Frontend Mentor's \"Pricing Component With Toggle\" challenge.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "build-dev": "NODE_ENV=development parcel build src/index.html --no-minify",
+    "clean": "rimraf .cache dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgdev1024/2020-fm-pricing-component-with-toggle.git"
+  },
+  "keywords": [
+    "frontend",
+    "mentor",
+    "pricing",
+    "component",
+    "with",
+    "toggle"
+  ],
+  "author": "Dennis Griffin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dgdev1024/2020-fm-pricing-component-with-toggle/issues"
+  },
+  "homepage": "https://github.com/dgdev1024/2020-fm-pricing-component-with-toggle#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.7"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
